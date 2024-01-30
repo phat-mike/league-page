@@ -1,8 +1,8 @@
 <script>
-    import { waitForAll } from '$lib/utils/helper';
+    //import { waitForAll } from '$lib/utils/helper';
 
-    export let data;
-    const {embedLink} = data;
+    //export let data;
+    //const {embedLink} = data;
 </script>
 
 <style>
@@ -16,12 +16,12 @@
 </style>
 
 <div class="g-doc-constitution">
-    {#await waitForAll(embedLink) }
+    <!-- {#await waitForAll(embedLink) }
         <p>Retrieving constitution data...</p>
-    {:then [embedLink] }
-        <iframe src={embedLink} title="Constitution" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    {:catch error}
-        <!-- promise was rejected -->
+    {:then [embedLink] } -->
+        <!-- <iframe src={embedLink} title="Constitution" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSYu3sxVexXmZB0FREV7CIyYnYzgTRcIC_GS8LTBcU85DSvmZy53vzcfqpTHfhuB2Wbrh-oZN2aj_jX/pub?embedded=true"></iframe>
+    <!-- {:catch error}
         <p>Something went wrong: {error.message}</p>
-    {/await}
+    {/await} -->
 </div>
