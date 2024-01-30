@@ -1,7 +1,8 @@
 <script>
     import { waitForAll } from '$lib/utils/helper';
 
-    export let embedLink;
+    export let data;
+    const {embedLink} = data;
 </script>
 
 <style>
