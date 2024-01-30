@@ -2,7 +2,7 @@ import { google } from 'googleapis';
 import { constitutionFileID } from '$lib/utils/leagueInfo';
 
 // Function to fetch document metadata and extract the embeddable link
-const getGoogDocEmbedLink = async () => {
+export const getGoogDocEmbedLink = async () => {
     // Load Google Cloud service account creds from Vercel env var
     const GOOGLE_APPLICATION_CREDENTIALS = import.meta.env.VITE_GOOGLE_APPLICATION_CREDENTIALS; 
 
