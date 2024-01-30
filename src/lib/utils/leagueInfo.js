@@ -4,6 +4,8 @@ export const leagueName = "The Grill"; // your league name
 export const dues = 100; // (optional) used in template constitution page
 export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
 export const enableBlog = true; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
+//export const enableGoogDocConstitution = true;  // requires GOOGLE_APPLICATION_CREDENTIALS env var in Vercel
+export const constitutionFileID = "1yKq-wNADmOD7YCFNFcR58gTGLTQQKDePyAOvaOU7UCc"; // file ID from google doc, can be seen embedded in share links
 
 /*   STEP 2   */
 export const homepageText = `
