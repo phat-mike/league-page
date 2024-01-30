@@ -19,8 +19,7 @@
     {#await waitForAll(embedLink) }
         <p>Retrieving constitution data...</p>
     {:then [embedLink] }
-        <p>Found embed link...</p>
-        <!--<iframe src={embedLink} title="Constitution" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+        <iframe src={embedLink} title="Constitution" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     {:catch error}
         <!-- promise was rejected -->
         <p>Something went wrong: {error.message}</p>
