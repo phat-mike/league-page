@@ -3,8 +3,9 @@ export const leagueID = "1041992538581962752"; // your league ID
 export const leagueName = "The Grill"; // your league name
 export const dues = 100; // (optional) used in template constitution page
 export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
-export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
-export const constitutionFileID = "1yKq-wNADmOD7YCFNFcR58gTGLTQQKDePyAOvaOU7UCc"; // file ID from google doc, can be seen embedded in share links
+export const enableBlog = true; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
+//export const constitutionFileID = "1yKq-wNADmOD7YCFNFcR58gTGLTQQKDePyAOvaOU7UCc"; // file ID from google doc, can be seen embedded in share links
+export const constitutionEmbedLink = "https://docs.google.com/document/d/e/2PACX-1vSYu3sxVexXmZB0FREV7CIyYnYzgTRcIC_GS8LTBcU85DSvmZy53vzcfqpTHfhuB2Wbrh-oZN2aj_jX/pub?embedded=true";
 
 /*   STEP 2   */
 export const homepageText = `

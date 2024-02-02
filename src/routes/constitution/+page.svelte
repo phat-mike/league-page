@@ -1,13 +1,15 @@
 <script>
-    //import { waitForAll } from '$lib/utils/helper';
-
-    //export let data;
-    //const {embedLink} = data;
+    import {constitutionEmbedLink} from "$lib/utils/leagueInfo"
 </script>
 
 <style>
     .g-doc-constitution {
-        margin-top: 2em; /* Adjust the margin as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Adjust as needed */
+        width: 850px;
+        margin: 0 auto; /* Center the container horizontally */
         padding: 1em;
         border: 1px solid #ddd; /* Add a border for separation */
         border-radius: 8px; /* Optional: Add border radius for a rounded look */
@@ -16,15 +18,5 @@
 </style>
 
 <div class="g-doc-constitution">
-    {@html `
-        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSYu3sxVexXmZB0FREV7CIyYnYzgTRcIC_GS8LTBcU85DSvmZy53vzcfqpTHfhuB2Wbrh-oZN2aj_jX/pub?embedded=true"></iframe>
-      `}
-    <!-- {#await waitForAll(embedLink) }
-        <p>Retrieving constitution data...</p>
-    {:then [embedLink] } -->
-        <!-- <iframe src={embedLink} title="Constitution" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-        
-    <!-- {:catch error}
-        <p>Something went wrong: {error.message}</p>
-    {/await} -->
+    <iframe src={constitutionEmbedLink} style="width:100%; height:100%;" title="Constitution"></iframe>
 </div>
