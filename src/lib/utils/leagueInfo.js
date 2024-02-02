@@ -4,6 +4,7 @@ export const leagueName = "The Grill"; // your league name
 export const dues = 100; // (optional) used in template constitution page
 export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
 export const enableBlog = true; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
+export const constitutionEmbedLink = "https://docs.google.com/document/d/e/2PACX-1vSYu3sxVexXmZB0FREV7CIyYnYzgTRcIC_GS8LTBcU85DSvmZy53vzcfqpTHfhuB2Wbrh-oZN2aj_jX/pub?embedded=true";
 
 /*   STEP 2   */
 export const homepageText = `
@@ -45,7 +46,7 @@ export const managers = [
       "name": "Phat Mike",
       "location": "Detroit", // (optional)
       "bio": "It's not a nursing home! It's a retirement community.",
-      "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
+      "photo": "/managers/question.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2019, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "phl", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": "Dynasty", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
@@ -78,7 +79,7 @@ export const managers = [
       "favoritePlayer": 675, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
       "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "Nobody should pin their hopes on a miracle.\n- Putin", // (optional)
+      "philosophy": "Nobody should pin their hopes on a miracle.", // (optional)
       "tradingScale": 10, // 1 - 10 (optional)
       "preferredContact": "Sleeper",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
@@ -99,7 +100,7 @@ export const managers = [
       "favoritePlayer": 7591, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
       "rookieOrVets": null, // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "Thank you, fantasy football. For telling me, even in my fantasies, I am bad at Football.\n - Some guy not on the Epstein list", // (optional)
+      "philosophy": "Thank you, fantasy football. For telling me, even in my fantasies, I am bad at Football.", // (optional)
       "tradingScale": 10, // 1 - 10 (optional)
       "preferredContact": "Sleeper",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
